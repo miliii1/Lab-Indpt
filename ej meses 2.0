@@ -1,0 +1,50 @@
+	Definir fecha, mes Como Entero
+	Escribir "Indicar una fecha como un entero de 6 digitos"
+	Leer fecha
+	//res1= mod 10000
+	//res2=fecha mod1000 
+	//mes1=trunc(res1/1000)
+	//mes2=trunc(res2/100)
+	mes <- trunc(fecha/100)
+	mes <- mes MOD 100
+	Escribir "La fecha es: ", fecha
+	Escribir "El mes es: 0", mes
+	
+	Si mes=01 Entonces
+		Escribir "Cumplis en Enero :)"
+	FinSi
+	Si mes = 02 Entonces
+		Escribir "Cumplis en Febrero :)"
+	FinSi
+Si mes = 03 Entonces
+	Escribir "Cumplis en Marzo :)"
+FinSi
+Si mes = 04 Entonces
+	Escribir "Cumplis en Abril :)"
+FinSi
+
+Si mes = 05 Entonces
+	Escribir "Cumplis en Mayo :)"
+FinSi
+Si mes = 06 Entonces
+	Escribir "Cumplis en Junio :)"
+FinSi
+Si mes = 07 Entonces
+	Escribir "Cumplis en Julio :)"
+FinSi
+Si mes = 08 Entonces
+	Escribir "Cumplis en Agosto :)"
+FinSi
+Si mes = 09 Entonces
+	Escribir "Cumplis en Septiembre :)"
+FinSi
+Si mes = 10 Entonces
+	Escribir "Cumplis en Octubre :)"
+FinSi
+Si mes = 11 Entonces
+	Escribir "Cumplis en Noviembre :)"
+FinSi
+Si mes = 12 Entonces
+	Escribir "Cumplis en Diciembre :)"
+FinSi
+FinAlgoritmo
