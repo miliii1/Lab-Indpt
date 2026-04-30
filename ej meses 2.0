@@ -1,4 +1,6 @@
-	Definir fecha, mes Como Entero
+//Anidar en bloque
+
+Definir fecha, mes Como Entero
 	Escribir "Indicar una fecha como un entero de 6 digitos"
 	Leer fecha
 	//res1= mod 10000
