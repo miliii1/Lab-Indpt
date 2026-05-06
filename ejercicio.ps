@@ -1,0 +1,17 @@
+//4)Escribir un programa para que ingrese 
+// un número de dos cifras, imprima un 
+//nuevonúmero que resulte de sus cifras 
+//permutadas. En la entrada de datos un 
+//mensaje debedecir: “Indicar un número de 
+//dos cifras”, la salida será:
+
+
+Algoritmo valorPermutado
+    Definir num, decena, unidad Como Entero
+    Escribir "Indicar un numero de dos cifras: "
+    Leer num
+    decena <- trunc(num / 10)
+    unidad <- num MOD 10
+    Escribir "Valor: ", num
+    Escribir "Valor permutado: ", unidad, decena
+FinAlgoritmo
