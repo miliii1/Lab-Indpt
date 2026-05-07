@@ -70,3 +70,19 @@ Algoritmo numeroGrande
 	FinSi
 	
 FinAlgoritmo
+
+// B) Ingresar un numero de tres cifras y verificar si es capicua
+Algoritmo numCapicua
+	Definir num, a, b, c Como Entero
+	Escribir "Ingrese un numero de tres cifras: "
+	Leer num
+	a <- trunc(num / 100) MOD 10
+	b <- trunc(num / 10) MOD 10
+    c <- num MOD 10
+	
+	Si a = c Entonces
+		Escribir "Es Capicua :)"
+	SiNo
+		Escribir "No es Capicua :("
+	FinSi
+FinAlgoritmo
