@@ -86,3 +86,4 @@ Algoritmo numCapicua
 		Escribir "No es Capicua :("
 	FinSi
 FinAlgoritmo
+//6) 
