@@ -1,4 +1,4 @@
-// 1) Ingresar dos números reales distinto de cero, imprimir la leyenda “Producto Positivo" si tienen el mismo signo o "producto negativo" si tienen distinto signo.
+// 1) Ingresar dos nÃºmeros reales distinto de cero, imprimir la leyenda â€œProducto Positivo" si tienen el mismo signo o "producto negativo" si tienen distinto signo.
 
 Algoritmo producto
 	Definir num1, num2 Como Entero
@@ -11,5 +11,7 @@ Algoritmo producto
 		Escribir "Producto negativo"
 	SiNo
 		Escribir "Producto positivo"
+	SiNo
+		Escribir "Error al ingresar un numero igual a 0 "
 	FinSi
 FinAlgoritmo
