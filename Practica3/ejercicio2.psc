@@ -1,4 +1,4 @@
-// 2) Ingresar dos números reales, imprimir la leyenda “Producto Positivo" , "producto negativo" o "Producto nulo" según corresponda.
+// 2) Ingresar dos nÃºmeros reales, imprimir la leyenda â€œProducto Positivo" , "producto negativo" o "Producto nulo" segÃºn corresponda.
 // AUN FALTA POR TERMINAR
 
 Algoritmo producto
@@ -16,4 +16,28 @@ Algoritmo producto
 		Escribir "Producto positivo"
 	    FinSi
 	FinSi
+FinAlgoritmo
+
+
+
+------------------------------------------------------------------------------------
+
+Algoritmo Ej2_guia3
+	
+	Definir num1, num2, productoPositivo, productoNegativo Como Reales
+	Escribir "Ingrese un numero distinto de 0: "
+	Leer num1
+	Escribir "Ingrese otro numero distinto de 0: "
+	Leer num2
+	
+	Si num1<>0 Y num2<>0 Entonces
+		Si (num1 > 0 Y num2 >0) O (num1 < 0 Y num2 <0) Entonces
+			Escribir "Es un producto positivo"
+		SiNo
+			Escribir "Es un producto negativo"
+		FinSi
+	SiNo
+		Escribir "Es un producto nulo "
+	FinSi
+	
 FinAlgoritmo
