@@ -98,3 +98,19 @@ Algoritmo eje14
 		Escribir "No hay descuento"
 	FinSi
 FinAlgoritmo
+
+// 15) Obrero
+Algoritmo eje15
+	Definir hora, total, extra Como Real
+	Escribir "Ingrese las horas trabajadas: "
+	Leer hora
+	
+	Si hora <= 40 Entonces
+		total <- hora * 16
+		Escribir "Sueldo total: $", total
+	SiNo
+		total <- 40 * 16
+		extra <- ((hora - 40) * 20) + total
+		Escribir "Sueldo total con horas extras: $", extra
+	FinSi
+FinAlgoritmo
