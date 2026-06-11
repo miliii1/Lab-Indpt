@@ -143,3 +143,47 @@ Algoritmo eje16
 		Fin Segun
 	FinSi
 FinAlgoritmo
+
+// 17 
+Algoritmo eje17
+	Definir dia, mes, anio Como Real
+	Definir fecha Como Caracter
+	Escribir "Ingrese dia: "
+	Leer dia
+	Escribir "Ingrese mes: "
+	Leer mes
+	Escribir "Ingrese anio: "
+	Leer anio
+	
+	Si mes <= 12 Entonces
+		Segun mes Hacer
+			1:
+				fecha <- "Enero"
+			2:
+				fecha <- "Febrero"
+			3:
+				fecha <- "Marzo"
+			4:
+				fecha <- "Abril"
+			5:
+				fecha <- "Mayo"
+			6:
+				fecha <- "Junio"
+			7:
+				fecha <- "Julio"
+			8:
+				fecha <- "Agosto"
+			9:
+				fecha <- "Septiembre"
+			10:
+				fecha <- "Octubre"
+			11:
+				fecha <- "Noviembre"
+			12:
+				fecha <- "Diciembre"
+		Fin Segun
+		Escribir "Hoy es ", dia, " de ", fecha, " de ", anio
+	SiNo
+		Escribir "Ingrese un mes valido."
+	FinSi
+FinAlgoritmo
