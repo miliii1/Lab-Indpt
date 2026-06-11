@@ -57,3 +57,25 @@ Algoritmo ej12
 
 	Escribir "La division es: ", div
 FinAlgoritmo
+// 13) Ingresar el nombre y la edad de una persona, el programa informa en qué etapa de su vida está: "Adultez" (mayor a 21 años), "Adolescencia" (mayor
+	// a 13 años) o "Niñez" (menor a 13 años) .
+Algoritmo eje13
+	Definir nombre Como Caracter
+	Definir edad Como Entero
+	
+	Escribir "Ingrese nombre: "
+	Leer nombre
+	Escribir "Ingrese edad: "
+	Leer edad
+	
+	Si edad > 21 Entonces
+		Escribir "Adultez"
+	SiNo
+		Si edad > 13 Entonces
+			Escribir "Adolescencia"
+		SiNo
+			Escribir "Niñez"
+		FinSi
+	FinSi
+	FinAlgoritmo
+	
