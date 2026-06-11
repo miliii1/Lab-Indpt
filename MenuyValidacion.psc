@@ -35,3 +35,54 @@ Algoritmo calcul
 		FinSi
 	FinSi		
 FinAlgoritmo
+
+
+// VIENDO REPETIR
+Algoritmo calcul
+	Definir eleccion Como Entero
+	Definir num1, num2, total Como Real
+	
+	Repetir
+		Escribir "-----Menu-------------"
+		Escribir "1. Sumar"
+		Escribir "2. Restar"
+		Escribir "3. Multiplicar"
+		Escribir "4. Dividir"
+		Escribir "0. Salir"
+		Escribir "Selecione una opcion: "
+		Leer eleccion
+	
+	Segun eleccion Hacer
+		1:
+			Escribir "Ingrese un numero: "
+			Leer num1
+			Escribir "Ingrese un numero: "
+			Leer num2
+			total <- num1 + num2
+			Escribir "La suma total es: ", total
+		2:
+			Escribir "Ingrese un numero: "
+			Leer num1
+			Escribir "Ingrese un numero: "
+			Leer num2
+			total <- num1 - num2
+			Escribir "La resta total es: ", total
+		3:
+			Escribir "Ingrese un numero: "
+			Leer num1
+			Escribir "Ingrese un numero: "
+			Leer num2
+			total <- num1 * num2
+			Escribir "La Multiplicacion total es: ", total
+		4:
+			Escribir "Ingrese un numero: "
+			Leer num1
+			Escribir "Ingrese un numero: "
+			Leer num2
+			total <- num1 / num2
+			Escribir "La division total es: ", total
+		De Otro Modo:
+			Escribir "Saliendo..."
+	FinSegun
+  Hasta Que eleccion = 0
+FinAlgoritmo
