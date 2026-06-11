@@ -79,3 +79,22 @@ Algoritmo eje13
 	FinSi
 	FinAlgoritmo
 	
+// 14) En un almacén se hace un 20% de descuento a los clientes que compren más de 15 productos y cuyo gasto supere los $10000. 
+// Se ingresa el importe y se debe informar cuál será la cantidad que pagará por su compra.
+
+Algoritmo eje14
+	Definir importe, cantidad Como Entero
+	Definir descuento, result Como Real
+	Escribir "Ingrese el importe: "
+	Leer importe
+	Escribir "Cantidad de productos: "
+	Leer cantidad
+	
+	Si importe > 10000 Y cantidad > 15 Entonces
+		result <- importe * 0.20
+		descuento <- importe - result
+		Escribir "Precio final con descuento del 20%: $", descuento 
+	SiNo
+		Escribir "No hay descuento"
+	FinSi
+FinAlgoritmo
