@@ -1,24 +1,42 @@
-// Cargar 10 lotes de 5 datos cada uno azar
-// a) Listar cada lote
-//b) mostrar la suma de cada lote al final del Proceso 
-//c) El maximo dato ingresado
-//d) Encontrar el dato maximo de cada lote
-
 Algoritmo lotes
 	Definir lote, i, j, a, elemento, sumaLote Como Entero
+	Definir maxGlobal, maxLote Como Entero
 	Dimension elemento(5)
-	sumaLote<-0
-	Para i<-1 Hasta 10
-		Escribir "Lote numero: ", i
-		Para j<-1 Hasta 5
-			elemento(j) <- azar(10)
-			sumaLote<-sumaLote+j
-		Fin Para
-		Para a<-1 Hasta 5 
-			Escribir " ", elemento(a)
-		Fin Para
-		Escribir "La suma total de ", i,  " es: ", sumaLote
-	Fin Para
-
-FinAlgoritmo
 	
+	maxGlobal <- -1 
+	
+	Para i <- 1 Hasta 10 Hacer
+		Escribir "=== LOTE NUMERO: ", i, " ==="
+		
+		sumaLote <- 0
+		maxLote <- -1 
+		
+		Para j <- 1 Hasta 5 Hacer
+			elemento(j) <- Azar(100)
+			sumaLote <- sumaLote + elemento(j)
+			
+		
+			Si elemento(j) > maxLote Entonces
+				maxLote <- elemento(j)
+			FinSi
+			
+
+			Si elemento(j) > maxGlobal Entonces
+				maxGlobal <- elemento(j)
+			FinSi
+		FinPara
+		
+		Escribir "elementos del lote:"
+		Para a <- 1 Hasta 5 Hacer
+			Escribir elemento(a), " "
+		FinPara
+		Escribir ""
+		
+	
+		Escribir "El dato máximo de este lote es: ", maxLote
+		Escribir "La suma de este lote es: ", sumaLote
+		Escribir ""
+
+	Escribir "PROCESO FINALIZADO"
+	Escribir "c) El máximo dato ingresado en total fue: ", maxGlobal
+FinAlgoritmo
