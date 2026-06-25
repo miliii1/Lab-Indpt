@@ -5,17 +5,16 @@
 //d) Encontrar el dato maximo de cada lote
 
 Algoritmo lotes
-	Definir lote, i, j, elemento, numAle Como Entero
+	Definir lote, i, j, a, elemento, numAle Como Entero
 	Dimension elemento(5)
 	Para i<-1 Hasta 10
 		Escribir "Lote numero: ", i
 		Para j<-1 Hasta 5
-			elemento(i) <- azar(5)
+			elemento(j) <- azar(10)
 		Fin Para
-		Para i<-1 Hasta 5 
-			Escribir " ", i, " ", elemento(i)
+		Para a<-1 Hasta 5 
+			Escribir " ", elemento(a)
 		Fin Para
 		
 	Fin Para
 FinAlgoritmo
-	
