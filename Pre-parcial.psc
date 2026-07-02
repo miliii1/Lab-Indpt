@@ -1,41 +1,27 @@
 Algoritmo EjercicioVectores
 	Definir tamano Como Entero
-	tamano <- 50
+	tamano <- 10
 	Definir mi_vector Como Entero
 	Dimension mi_vector[tamano]
 	
-
 	CargarVector(mi_vector, tamano)
-	Limpiar Pantalla
-	
-	
 	MostrarVector(mi_vector, tamano)
-	Escribir ""
-	
-	
 	Informe(mi_vector, tamano)
 FinAlgoritmo
 
 
 Funcion CargarVector(v Por Referencia, t)
-	Definir i, num Como Entero
-	Para i <- 1 Hasta t Con Paso 1 Hacer
-		Repetir
-			Escribir "Ingrese entero positivo para la posicion ", i, " de ", t, ":"
-			Leer num
-			Si num <= 0 Entonces
-				Escribir "Error: El numero debe ser estrictamente mayor a 0."
-			FinSi
-		Hasta Que num > 0
-		v[i] <- num
+	Definir i Como Entero
+	Para i <- 1 Hasta t 
+		v[i] <- Azar(99)
 	FinPara
 FinFuncion
 
 
 Funcion MostrarVector(v Por Referencia, t)
 	Definir i Como Entero
-	Escribir "Elementos guardados en el vector:"
-	Para i <- 1 Hasta t Con Paso 1 Hacer
+	Escribir "elementos guardados en el vector:"
+	Para i <- 1 Hasta t 
 		Escribir v[i], "  " Sin Saltar
 	FinPara
 	Escribir ""
@@ -45,7 +31,7 @@ Funcion prom <- Promedio(v Por Referencia, t)
 	Definir i, suma Como Entero
 	Definir prom Como Real
 	suma <- 0
-	Para i <- 1 Hasta t Con Paso 1 Hacer
+	Para i <- 1 Hasta t 
 		suma <- suma + v[i]
 	FinPara
 	prom <- suma / t
@@ -55,7 +41,7 @@ FinFuncion
 Funcion max <- Maximo(v Por Referencia, t)
 	Definir i, max Como Entero
 	max <- v[1]
-	Para i <- 2 Hasta t Con Paso 1 Hacer
+	Para i <- 2 Hasta t 
 		Si v[i] > max Entonces
 			max <- v[i]
 		FinSi
@@ -70,8 +56,6 @@ Funcion Informe(v Por Referencia, t)
 	prom <- Promedio(v, t)
 	max <- Maximo(v, t)
 	
-	
-	Escribir "INFORME final"
 	Escribir "Promedio total de los elementos: ", prom
-	Escribir "Valor maximo registrado:         ", max
+	Escribir "Valor maximo registrado: ", max
 FinFuncion
